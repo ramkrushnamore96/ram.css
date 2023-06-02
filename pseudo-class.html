@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - pseudo-class</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui;
+        }
+        a:hover {
+            color: rgb(226, 14, 14);
+        }
+        a:active {
+            color: rgb(193, 235, 10);
+        }
+        a:visited {
+            color: rgb(240, 13, 51);
+        }
+        .button {
+            text-decoration:none;
+            display: inline-block;
+            padding: 10px 20px;
+            background: lightblue;
+            color: rgb(238, 13, 32);
+            border-radius: 20px;
+            font-family: ;'system-ui' 
+        }
+        .button:hover {
+            background: rgb(65, 5, 204);
+            color: rgb(18, 243, 55);
+        }
+        .wrapper {
+            display: flex;
+            gap: 10px;
+            margin: 8%;
+        }
+        .wrapper article {
+            padding: 20px;
+            background: rgb(55, 228, 11);
+        }
+        .wrapper article:first-child {
+            background: rgb(230, 9, 9);
+        }
+        .wrapper article:last-child {
+            background: rgb(139, 128, 240);
+        }
+        .wrapper article:nth-child(2) {
+            background: rgb(211, 211, 211);
+        }
+        .wrapper article:nth-child(odd) {
+            background: rgb(148, 196, 14);
+            color: rgb(51, 38, 230);
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:void(0)" class="button">alphabates</a>
+    <section class="wrapper">
+        <article>A</article>
+        <article>B</article>
+        <article>C</article>
+        <article>D</article>
+        <article>E</article>
+    </section>
+</body>
+</html>

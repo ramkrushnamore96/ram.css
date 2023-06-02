@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS - Combinators</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        body * {
+            padding: 8px;
+            margin: 8px;
+        }
+
+        .border {
+            border: 5px solid rgb(245, 21, 21);
+        }
+
+        /*Descendant selector (space)*/
+        section p {
+            background: rgb(239, 241, 241);
+        }
+
+        /*Child selector (>)*/
+        section > p {
+            background: rgb(158, 144, 238);
+        }
+
+        /*Adjacent sibling selector (+)*/
+        section + article {
+            font-weight: 700;
+        }
+
+        /*General Sibling Selector (~)*/
+        section ~ article {
+            background: rgb(231, 18, 50);
+        }
+    </style>
+</head>
+<body>
+    <section class="border">
+        <p>This is paragraph 1</p>
+        <p>This is paragraph 2</p>
+        <p>This is paragraph 3</p>
+        <article>
+            <p>Child paragraph of article</p>
+        </article>
+    </section>
+    <article>
+        This is article
+    </article>
+    <article>
+        <p>Another child paragraph of Article</p>
+    </article>
+    <p>This is paragraph</p>
+    <article>
+        Another article
+    </article>
+</body>
+</html>
+Footer

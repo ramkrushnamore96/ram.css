@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS - Masking</title>
+    <style>
+        .masking {
+            -webkit-mask: url(images/google.png) no-repeat;
+            /* mask: url(images/google.png) no-repeat; */
+            /* mask-image: url(images/google.png); */
+            /* -webkit-mask-repeat: no-repeat; */
+            /* mask-repeat: no-repeat; */
+            -webkit-mask-size: auto 150px;
+        }
+    </style>
+</head>
+<body>
+    <section class="masking">
+        <img src="images/svg.png" alt="Background" width="200">
+    </section>
+    <figure>
+        <img src="images/firefox logo svg.jpg" alt="Background" width="200">
+        <figcaption>FIREFOX</figcaption>
+    </figure>
+    <figure>
+        <img src="images/email.png" alt="Google" width="300">
+        <figcaption>EMAIL</figcaption>
+    </figure> 
+</body>
+</html>

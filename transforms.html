@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS - Transform</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        section {
+            background: lightpink;
+            width: 200px;
+            height: 200px;
+            margin: 16px;
+            padding: 16px;
+        }
+
+        .rotate {
+            /* transform: rotate(90deg); */
+            /* transform: rotateX(90deg); */
+            transform: rotateY(180deg);
+        }
+
+        .translate {
+            transform: translate(10%, 10%);
+            background: lightgreen;
+        }
+
+        .scale {
+            margin: 10% auto;
+            /* transform: scale(1.2); */
+            transform: scaleX(1.2);
+            transform: scaleY(1.2);
+        }
+
+        .skew {
+            /* transform: skew(10deg, 10deg); */
+            transform: skewX(20deg);
+            transform: skewY(30deg);
+        }
+
+        /* 
+            Syntax:
+            matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+        */
+        .matrix {
+            transform: matrix(1, -0.3, 0, 1, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <section class="rotate">
+        This is transform rotate method 90<sup>o</sup> degree
+    </section>
+
+    <section class="translate">
+        This is transform translate method
+    </section>
+
+    <section class="scale">
+        This is scale 1.2x method
+    </section>
+
+    <section class="skew">
+        This is skew method
+    </section>
+
+    <section class="matrix">
+        This is matrix method
+    </section>
+</body>
+</html>

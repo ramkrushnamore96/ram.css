@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS - Links</title>
+    <style>
+        body {
+            font-family: system-ui;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            display: -moz-inline-box;
+            padding: 4px 24px;
+            background: rgb(71, 255, 102);
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font: 400 1em/1.5 'system-ui';
+            border: 1px solid transparent;
+            margin: 10px;
+        }
+
+        .button:hover {
+            background: rgb(245, 112, 130);
+            text-decoration: none;
+        }
+
+        .outline {
+            background: transparent;
+            color: rgb(15, 14, 14);
+            border: 2px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="javascript:void(0)">Read more</a>
+    <a href="javascript:void(0)" class="button">Read more</a>
+    <a href="javascript:void(0)" class="button outline">Button</a>
+    <button class="button">This is Button</button>
+    <input type="button" class="button" value="Click here">
+    <input type="submit" class="button">
+    <input type="reset" class="button">
+</body>
+
+</html>

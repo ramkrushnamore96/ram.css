@@ -1,0 +1,21 @@
+/*External stylesheet*/
+body {
+    font-family: system-ui, sans-serif;
+    background: url(images/background.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.wrapper {
+    width: 60%;
+    margin: 10% auto;
+    background: rgb(255 255 255 / 80%);
+    padding: 16px;
+    border-radius: 4px;
+    border: 10px solid rgb(39 39 39);
+    box-shadow: 1px 3px 5px rgb(0 0 0 / 50%);
+}
+h1 {
+    font-size: 40px;
+    margin:0 0 10px;
+    text-align: center;
+}

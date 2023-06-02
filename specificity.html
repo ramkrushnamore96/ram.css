@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Specificity</title>
+    <style>
+        body {
+            font-family: system-ui;
+        }
+        /*#id selector = 100*/
+        #text {
+            color: black;
+        }
+        /*.class selector = 10*/
+        .red {
+            color: red;
+        }
+        /*element selector = 1*/
+        p {
+            color: blue;
+        }
+        #text {
+            color: rebeccapurple;
+        }
+        #text {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <p id="text" class="red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quasi dolores corrupti accusamus quo dolorum iste numquam error sint quibusdam. Autem odit voluptatem, et sit quis eligendi nemo esse magnam.
+    </p>
+</body>
+</html>

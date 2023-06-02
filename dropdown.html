@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS - Dropdown</title>
+    <style>
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+        nav {
+            background: rgba(226, 16, 34, 0.9);
+        }
+        nav > ul {
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            display: block;
+            padding: 0;
+            position: relative;
+        }
+        nav a {
+            display: inline-block;
+            color: #641ada;
+            font-size: 14px;
+            line-height: 44px;
+            opacity: .8;
+        }
+        nav a:hover {
+            opacity: 1;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            background: #0fd30f;
+            width: 150px;
+            padding: 0 16px;
+            margin: 0;
+        }
+        nav > ul > li:hover .dropdown {
+            display: block;
+        }
+        .dropdown a {
+            color: rgb(230, 14, 14);
+        }
+    </style>
+</head>
+<body>
+   <header>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0)">Home</a></li>
+                <li><a href="javascript:void(0)">About us</a></li>
+                <li><a href="javascript:void(0)">Services</a></li>
+                <li>
+                    <a href="javascript:void(0)">Products</a>
+                    <ul class="dropdown">
+                        <li><a href="javascript:void(0)">Product 1</a></li>
+                        <li><a href="javascript:void(0)">Product 2</a></li>
+                        <li><a href="javascript:void(0)">Product 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)">Contact us</a></li>
+            </ul>
+        </nav>
+   </header> 
+</body>
+</html>

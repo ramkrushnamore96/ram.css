@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui;
+}
+
+output{
+    display: block;
+    margin: 10% auto;
+    border:1px solid darkorchid;
+    background: rgba(30 143 255 /0.5);
+    font:500 1em/1.5 'system-ui';
+    border-radius: 5px;
+}

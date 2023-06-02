@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - List</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        a {
+            color: rgb(255 255 255 / 80%);
+        }
+
+        a:hover {
+            color: rgb(255 255 255 / 1);
+        }
+
+        ul {
+            margin: 8px 0;
+            padding: 0 16px;
+        }
+
+        .nav {
+            margin: 0;
+            padding: 8px;
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            background: rgba(175, 16, 16, 0.8);
+            font-size: 14px;
+            gap: 8px;
+        }
+
+        
+        .list-wrapper {
+            margin: 10%;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="javascript:void(0)">Home</a></li>
+        <li><a href="javascript:void(0)">About us</a></li>
+        <li><a href="javascript:void(0)">Services</a></li>
+        <li><a href="javascript:void(0)">Products</a></li>
+        <li><a href="javascript:void(0)">Blogs</a></li>
+        <li><a href="javascript:void(0)">Contact us</a></li>
+    </ul>
+
+    <section class="list-wrapper">
+        <h1>List of cities:</h1>
+        <ul>
+            <li>Pune</li>
+            <li>Pimpri Chinchwad</li>
+            <li>Ahmednagar</li>
+            <li>Nagpur</li>
+            <li>Solapur</li>
+            <li>Kolhapur</li>
+        </ul>
+    </section>
+</body>
+</html>

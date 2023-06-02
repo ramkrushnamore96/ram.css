@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS - Pseudo elements</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        ::marker {
+            color: rgb(42, 165, 124);
+        }
+        ::selection {
+            background: rgb(73, 226, 43);
+            color: rgb(226, 7, 7);
+        }
+        h1, p {
+            margin: 10% 5% 4%;
+        }
+        h1:first-letter {
+            font-size: 3em; 
+            font-weight: 700;
+            color: blue;
+        }
+        p:first-line {
+            font-variant: small-caps;
+            font-weight: 700;
+            color: rgb(255, 0, 0);
+        }
+        p:before {
+            content: '"';
+            color: rgb(127, 157, 255);
+        }
+        p:after {
+            content: '';
+            display: block;
+            background: url(images/lock-svgrepo-com.svg) no-repeat;
+            width: 24px;
+            height: 24px;
+            color: rgb(243, 20, 87);
+        }
+    </style>
+</head>
+<body>
+    <h1>This is heading</h1>
+    <p> A Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolorem quod sint corrupti ipsam quis magni sit.
+    </p>
+    <ul>
+        <li>This is some text</li>
+        <li>This is some text</li>
+        <li>This is some text</li>
+    </ul>
+</body>
+</html>

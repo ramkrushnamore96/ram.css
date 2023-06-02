@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1>CSS-IMAGE-GALLERY.&#8595</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Image-Gallery</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 1ox;
+            font-family: serif;
+        }
+        img {
+            max-width: 100%;
+        }
+        .gallery {
+            display:grid;
+            gap: 10px;
+            grid-template-columns: repeat(3,1fr);
+            margin: 10px;
+            height: 55px;
+            padding: 45px;
+        }
+        .image-wrapper img {
+            width: 200%;
+            height: 150px;
+            padding: 20px;
+            object-fit: contain;
+            border: 05px solid;
+        }
+    </style>
+</head>
+<body>
+    <section class="gallery">
+        <section class="image-wrapper">
+            <img src="images/5968534.png" alt="wallpaper">
+        </section>
+        <section class="image-wrapper">
+            <img src="images/0ed27e8b1ec930df1b6e0a2b845b1a2b.jpg"alt ="wallpaper">
+        </section>
+        <section class="image-wrapper">
+            <img src="images/18c3affd-2af0-4c75-90b6-f7dd26ec4cdc.jpg" alt="wallpaper">
+        </section>
+        <section class="image-wrapper">
+            <img src="images/4a1ed5266313eac2ac93f1a7ff02bab9.jpg" alt="wallpaper">
+        </section>
+        <section class="image-wrapper">
+            <img src="images/5968534.png" alt="wallpaper">
+        </section>
+        <section class="image-wrapper">
+            <img src="images/8953cca6193617b6d47f5e46f594b929.jpg" alt="wallpaper">
+        </section>
+        <section class="image-wrapper">
+            <img src="images/email.png" alt="wallpaper">
+        </section>
+        <section class="image-wrapper">
+            <img src="images/download.png" alt="wallpaper">
+        </section>
+        <section class="image-wrapper">
+            <img src="images/download (1).png" alt="wallpaper">
+        </section>
+</body>
+</html>

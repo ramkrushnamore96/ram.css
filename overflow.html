@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Overflow</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .parent {
+            background: rgba(243, 10, 10, 0.1);
+            padding: 8px 16px;
+            height: 80vh;
+            margin: 10%;
+            border-radius: 4px;
+            overflow: auto;
+            overflow-x: scroll;
+            overflow-y:scroll;
+            /* overflow-x: auto;
+            overflow-y: auto; */
+        }
+    </style>
+</head>
+<body>
+    <section class="parent">
+        <head>
+            <h1>css-overflow-:</h1>
+        </head>
+        <p>The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.</p>
+
+        <p>The overflow property has the following values:</p>
+
+        <p>visible -; Default. The overflow is not clipped. The content renders outside the element's box</p>
+
+        <p>hidden -;The overflow is clipped, and the rest of the content will be invisible</p>
+
+        <p>scroll -; The overflow is clipped, and a scrollbar is added to see the rest of the content</p>
+
+        <p>auto - Similar to scroll, but it adds scrollbars only when necessary</p>
+    </section>
+</body>
+</html>

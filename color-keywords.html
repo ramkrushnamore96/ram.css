@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS - Color keywords</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            font-family: system-ui;
+        }
+        section,
+        article {
+            border-left: 10px solid black;
+            padding: 16px;
+            margin: 10%;
+            color: transparent;
+            text-shadow: 0 0 3px rgb(0 0 0 / 80%);
+        }
+
+        article {
+            color: blue;
+            border-left-color: currentColor;
+            text-shadow: none;
+        }
+        .initial {
+            color: initial;
+        }
+        .inherit {
+            color: red;
+        }
+        .inherit article {
+            color: inherit;
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <h1>This is transparent</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur facere ea culpa error perspiciatis aut odio voluptas enim nam sunt beatae, architecto qui aspernatur veniam dolorum laborum tempora expedita sapiente?</p>
+    </section>
+    
+    <article>
+        <h1>This is currentColor</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur facere ea culpa error perspiciatis aut odio voluptas enim nam sunt beatae, architecto qui aspernatur veniam dolorum laborum tempora expedita sapiente?</p>
+    </article>
+
+    <article class="initial">
+        <h1>This is initial</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur facere ea culpa error perspiciatis aut odio voluptas enim nam sunt beatae, architecto qui aspernatur veniam dolorum laborum tempora expedita sapiente?</p>
+    </article>
+
+    <main class="inherit">
+        <article>
+            <h1>This is inherit</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur facere ea culpa error perspiciatis aut odio voluptas enim nam sunt beatae, architecto qui aspernatur veniam dolorum laborum tempora expedita sapiente?</p>
+        </article>
+    </main>
+</body>
+</html>

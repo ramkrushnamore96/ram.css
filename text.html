@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS - Text</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: system-ui;
+        }
+
+        .bold {
+            font-weight: 700;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .overline {
+            text-decoration: overline;
+        }
+
+        .linethrough {
+            text-decoration: line-through;
+        }
+
+        .times {
+            font-family: Georgia, 'Times New Roman', Times, serif
+        }
+
+        .wrapper {
+            margin: 8%;
+            padding: 16px;
+            background: rgba(30, 199, 15, 0.1);
+            height: 100px;
+            overflow: auto;
+            /* text-overflow: ellipsis;
+            white-space: nowrap; */
+            word-break: break-all;
+        }
+
+        .vertical {
+            writing-mode: vertical-lr;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <p class="bold">This is bold text</p>
+        <p class="italic">This is italic style</p>
+        <p class="center">This is align center. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis enim
+            veniam non suscipit amet! Quasi, recusandae. In distinctio doloremque assumenda laborum id, quasi impedit
+            adipisci ullam libero atque, enim inventore?</p>
+        <p class="right">This is right align paragraph</p>
+        <p class="underline">This paragraph has underline</p>
+        <p class="overline">This paragraph has overline</p>
+        <p class="linethrough">This paragraph has line through</p>
+        <h1 class="times">This is heading</h1>
+        <p class="wrapper">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, aliquid. Aut incidunt
+            mollitia veniam, repellendus expedita cupiditate minus ullam quis nulla. Cupiditate autem quidem fugit
+            facilis accusamus assumendaaaaaaaaaaaaaaasssssssssssssssssssss voluptas voluptatibus!</p>
+    </section>
+    <p class="vertical">This is vertical align text</p>
+</body>
+
+</html>

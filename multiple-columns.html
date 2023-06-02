@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS - Multiple columns</title>
+    <style>
+        section {
+            column-count: 2;
+            column-gap: 8px;
+            /* column-rule: 1px solid rgb(0 0 0 / 10%); */
+            margin: 16px;
+        }
+        section h1 {
+            column-span: all;
+            text-align: center;
+            margin: 0 0 8px 0;
+            padding: 0;
+        }
+        p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>This is heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nemo repellendus placeat, vero, vel aliquam
+            earum iure est voluptatibus illo aspernatur inventore iste numquam? Pariatur fugiat neque dicta repellendus
+            odio!</p>
+    </section>
+</body>
+</html>
